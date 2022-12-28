@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
+import { InputSearch } from "../../ui-components/input-search/input-search.component";
 
 export function Header() {
   // ---------------------------------------------------------------------------
@@ -12,10 +13,10 @@ export function Header() {
     <div>
       <div className="w-full bg-slate-500 flex justify-around items-center">
         <div>
-          <Link to={"/"}>Hekto</Link>
+          <Link to={"/"}>Tech</Link>
         </div>
         <div>
-          <ul className="p-8 text-slate-100 text-3xl flex">
+          <ul className="p-5 text-1xl flex">
             <li onClick={() => navigate("/")}>Home</li>
             <li onClick={() => navigate("/products")}>Products</li>
             <li onClick={() => navigate("/blog")}>Blog</li>
@@ -23,6 +24,7 @@ export function Header() {
             <li onClick={() => navigate("/contact")}>Contact</li>
           </ul>
         </div>
+        <InputSearch />
       </div>
     </div>
   );
