@@ -12,10 +12,10 @@ import { SignUp } from "./components/sign-up/sign-up";
 
 function App() {
   return (
-    <div className="flex flex-col h-screen bg-slate-600">
+    <div className="flex flex-col h-screen overflow-hidden bg-slate-600">
       <Header />
 
-      <div className="flex-1">
+      <div className="flex-1 overflow-y-scroll">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="sign-up" element={<SignUp />} />

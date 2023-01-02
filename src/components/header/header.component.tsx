@@ -10,9 +10,9 @@ export function Header() {
 
   // ---------------------------------------------------------------------------
   return (
-    <header className="h-20 bg-violet-700 text-white flex items-center justify-around">
+    <header className="h-20 dark:bg-gray-900 flex items-center justify-around">
       <div>
-        <Link className="text-2xl font-bold" to={"/"}>
+        <Link className="text-2xl font-bold text-white " to={"/"}>
           Tech
         </Link>
       </div>
