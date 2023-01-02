@@ -10,22 +10,47 @@ export function Header() {
 
   // ---------------------------------------------------------------------------
   return (
-    <div>
-      <div className="w-full bg-slate-500 flex justify-around items-center">
-        <div>
-          <Link to={"/"}>Tech</Link>
-        </div>
-        <div>
-          <ul className="p-5 text-1xl flex">
-            <li onClick={() => navigate("/")}>Home</li>
-            <li onClick={() => navigate("/products")}>Products</li>
-            <li onClick={() => navigate("/blog")}>Blog</li>
-            <li onClick={() => navigate("/shop")}>Shop</li>
-            <li onClick={() => navigate("/contact")}>Contact</li>
-          </ul>
-        </div>
-        <InputSearch />
+    <header className="h-20 dark:bg-gray-900 flex items-center justify-around">
+      <div>
+        <Link className="text-2xl font-bold text-white " to={"/"}>
+          Tech
+        </Link>
       </div>
-    </div>
+      <div>
+        <ul className="flex gap-x-2 cursor-pointer">
+          <li
+            className="text-slate-100 font-medium hover:text-rose-400"
+            onClick={() => navigate("/")}
+          >
+            Home
+          </li>
+          <li
+            className="text-slate-100 font-medium hover:text-rose-400"
+            onClick={() => navigate("/products")}
+          >
+            Products
+          </li>
+          <li
+            className="text-slate-100 font-medium hover:text-rose-400"
+            onClick={() => navigate("/blog")}
+          >
+            Blog
+          </li>
+          <li
+            className="text-slate-100 font-medium hover:text-rose-400"
+            onClick={() => navigate("/shop")}
+          >
+            Shop
+          </li>
+          <li
+            className="text-slate-100 font-medium hover:text-rose-400"
+            onClick={() => navigate("/contact")}
+          >
+            Contact
+          </li>
+        </ul>
+      </div>
+      <InputSearch />
+    </header>
   );
 }
