@@ -14,7 +14,6 @@ function App() {
   return (
     <div className="flex flex-col h-screen overflow-hidden bg-slate-600">
       <Header />
-
       <div className="flex-1 overflow-y-scroll">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,7 +23,7 @@ function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="shop" element={<Shop />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<h1>404 Not Found</h1>} />
+          <Route path="*" element={<h1>404 Not Found boi</h1>} />
         </Routes>
       </div>
       <Footer />
